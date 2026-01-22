@@ -119,3 +119,31 @@ li a {
 .red_highlight {
     color: #fe3131;
 }
+
+.footer {
+    content: "footer test";
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #414141;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+   
+    
+    
+}
+
+.footer .social {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    align-content: right;
+   
+   
+    padding: 20px;
+    padding-top: 25px;
+}
