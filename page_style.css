@@ -15,17 +15,13 @@ body {
 
 .header {
     width: 100%;
-    height: 80px;
+    height: 120px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     background-color: #101010;
     border-bottom-style: solid;
     border-bottom-color: #f0f0f0;
-}
-
-.nav_links {
-    list-style: none;
 }
 
 .nav_links li {
@@ -46,13 +42,13 @@ li a {
     font-weight: 700;
     font-size: 25px;
     color: #f0f0f0;
-    text-decoration: none;
 }
 
 .logo {
-    width: 120px;
+    width: 100px;
     cursor: pointer;
-    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 75px;
 }
 
 .name {
@@ -61,4 +57,9 @@ li a {
     font-size: 50px;
     color: #f0f0f0;
     text-decoration: none;
+    margin-right: auto;
+}
+
+.red_highlight {
+    color: #fe3131;
 }
