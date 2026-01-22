@@ -4,5 +4,7 @@
 
 layout: page
 title: "Home"
+style: h1
+color: red
 ---
-This is the website
+This is the website 
