@@ -26,7 +26,26 @@ body {
 
 .nav_links {
     list-style: none;
-    padding-bottom: 20px;
+    position:relative;
+    z-index: 1;
+    
+   
+    padding-right: 20px;
+}
+
+.nav_links::after{
+    content: '';
+    color: #f0f0f0;
+    background-color: #363636;
+    border-radius: 20px;
+    height: 300%;
+    width: 100%;
+    top: -95%;
+    right: 2%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+   
 }
 
 .nav_links li {
@@ -52,7 +71,7 @@ body {
     height: 110%;
     width: 110%;
     bottom: -15%;
-    left: -5%;
+    left: -6.5%;
     position: absolute;
     transition: 0.5s ease-in-out;
     
@@ -75,7 +94,7 @@ body {
 li a {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
     color: #f0f0f0;
 }
 
