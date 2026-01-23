@@ -1,5 +1,6 @@
 ---
-layout: page
-title: "Home"
+layout: home
+title: Home
 ---
-Hello world!
+
+# This is the home page
