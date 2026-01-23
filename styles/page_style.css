@@ -11,11 +11,24 @@
 
 body {
     background-color: #101010;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
 }
 
 .header {
+    position: fixed;
     width: 100%;
-    height: 120px;
+    height: 80px;
+    margin-top: -80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,35 +39,19 @@ body {
 
 .nav_links {
     list-style: none;
-    position:relative;
-    z-index: 1;
-    
-   
-    padding-right: 20px;
-}
-
-.nav_links::after{
-    content: '';
-    color: #f0f0f0;
-    background-color: #363636;
+    background-color: #414141;
     border-radius: 20px;
-    height: 300%;
-    width: 100%;
-    top: -95%;
-    right: 2%;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-    z-index: -1;
-   
+    height: 60px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
 }
 
 .nav_links li {
-    position: relative;
-    width: max-content;
     display: inline-block;
     padding: 0px 20px;
+    
 }
-
 
 .nav_links li a::after{
     content: '';
@@ -77,35 +74,29 @@ body {
     
 }
 
-
 .nav_links li a {
     transition: all 0.5s ease 0s;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #f0f0f0;
 }
 
 .nav_links li a:hover {
-    color: #ffffff;
+    color: #f0f0f0;
     position: relative;
-    text-shadow: -4px 3px 3px rgb(0, 0, 0);
+    text-shadow: -4px 3px 3px #101010;
     z-index: 2;
     
     
 }
 
-li a {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: #f0f0f0;
-}
-
 .logo {
-    width: 100px;
+    width: 70px;
     cursor: pointer;
     padding-right: 10px;
     padding-left: 75px;
 }
-
-
 
 .name {
     font-family: "VT323", monospace;
@@ -122,20 +113,12 @@ li a {
 }
 
 .footer {
-    content: "footer test";
-    position: absolute;
-    bottom: 0%;
-    left: 0;
-    height: 100px;
     width: 100%;
-    background-color: #414141;
-    padding-bottom: 10px;
+    height: 100px;
     display: flex;
     justify-content: right;
     align-items: center;
-   
-    
-    
+    background-color: #414141;
 }
 
 .footer .social {
@@ -143,8 +126,5 @@ li a {
     width: 60px;
     cursor: pointer;
     align-content: right;
-   
-   
     padding: 20px;
-    padding-top: 25px;
 }

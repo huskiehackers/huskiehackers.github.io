@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="../page_style.css">
+        <link rel="stylesheet" href="../styles/page_style.css">
         <title> Huskie Hackers - {{ page.title }} </title>
+        <link rel="icon" href="../assets/images/hhlogo.png" type="image/x-icon">
     </head>
     
     <body>
         <div class="header">
-            <img class="logo" src="../assets/images/hhlogo.png" alt="logo">
-            <a class="name" href="../index.html">Huskie <span class="red_highlight">Hackers</span></a>
-            
+            <a href="../home/">
+                <img class="logo" src="../assets/images/hhlogo.png" alt="logo">
+            </a>
+            <a class="name" href="../home/">Huskie <span class="red_highlight">Hackers</span></a>
             <nav>
                 <ul class="nav_links">
-                    <li><a href="#">Meetings</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="../meetings/">Meetings</a></li>
+                    <li><a href="../events/">Events</a></li>
+                    <li><a href="../history/">History</a></li>
+                    <li><a href="../contacts/">Contacts</a></li>
                 </ul>
             </nav>
         </div>
         
-        {{ content }}
-
+        <main> {{ content }} </main>
 
         <div class="footer">
 
