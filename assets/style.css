@@ -24,6 +24,10 @@ main {
     flex: 1;
 }
 
+.red_highlight {
+    color: #fe3131;
+}
+
 /******************** HEADER ********************/
 
 .header {
@@ -110,10 +114,6 @@ main {
     
 }
 
-.red_highlight {
-    color: #fe3131;
-}
-
 /******************** FOOTER ********************/
 
 .footer {
@@ -140,6 +140,35 @@ main {
     font-size: 55px;
     color: #f0f0f0;
 }
+
+.home .overview {
+    color: #f0f0f0;
+}
+
+.home .about {
+    background-color: #fe3131;
+}
+
+/*.home blockquote blockquote {
+    padding: 30px;
+    margin: 50px;
+    background-color: #fe3131;
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.home blockquote blockquote #about-title {
+    font-size: 35px;
+
+
+}
+
+.home blockquote blockquote #about-info {
+    font-size: 20px;
+}*/
+
 
 /******************** MEETINGS ********************/
 .meetings {

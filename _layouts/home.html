@@ -1,9 +1,12 @@
 ---
 layout: base
+overview: ../overview.markdown
 ---
 
 <div class="home">
 
-    {{ content }}
+    {% include overview.html content=page.overview %}
+
+    {% include about.html %}
 
 </div>
