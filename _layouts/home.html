@@ -1,12 +1,19 @@
 ---
 layout: base
-overview: ../overview.markdown
 ---
+
+{% capture overview_content %}
+{% include_relative /_includes/markdowns/overview.markdown %}
+{% endcapture %}
+
+{% capture about_content %}
+{% include_relative /_includes/markdowns/about.markdown %}
+{% endcapture %}
 
 <div class="home">
 
-    {% include overview.html content=page.overview %}
+    {% include overview.html content=overview_content %}
 
-    {% include about.html %}
-
+    {% include about.html content=about_content %}
+    
 </div>
