@@ -24,6 +24,10 @@ main {
     flex: 1;
 }
 
+.red_highlight {
+    color: #fe3131;
+}
+
 /******************** HEADER ********************/
 
 .header {
@@ -110,10 +114,6 @@ main {
     
 }
 
-.red_highlight {
-    color: #fe3131;
-}
-
 /******************** FOOTER ********************/
 
 .footer {
@@ -134,11 +134,107 @@ main {
 }
 
 /******************** HOME ********************/
-.home {
+
+.home .overview {
+    background: url('../assets/images/overview_bg.png');
+    background-size: cover;
+    height: 600px;
+    font-family: "VT323", monospace;
+    font-weight: 350;
+    font-size: 100px;
+    color: #f0f0f0;
+}
+
+.home .overview p {
+    padding: 40px;
+}
+
+.home .overview p strong {
+    color: #fe3131;
+}
+
+.home .overview ul {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+}
+
+.home .overview li img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+}
+
+.home .overview li p {
+    padding: 0px;
+    font-size: 25px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    background-color: #f0f0f0;
+    color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .overview li.up img, .home .overview li.up p {
+    box-shadow: #fe3131 -10px 10px;
+}
+
+.home .overview li.down img {
+    box-shadow: #fe3131 -10px -10px;
+}
+
+.home .about {
+    background: url('../assets/images/about_bg.png');
+    background-size: 500px;
+    display: flex;
+    align-items: center;
+    animation: slide 31s linear infinite;
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
-    font-size: 55px;
+}
+
+@keyframes slide {
+    from {background-position: 0 0;}
+    to {background-position: 100% 100%;}
+}
+
+.home .about h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.home .about p {
+    font-size: 25px;
+    text-align: left;
+}
+
+.home .about .text_info {
+    padding: 30px;
+    margin: 50px;
+    background-color: #fe3131;
     color: #f0f0f0;
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+.home .about .about_image {
+    margin: 50px;
+    padding: 30px;
+    border-radius: 80px;
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .about .about_image img {
+    width: 600px;
+    border-radius: 50px;
 }
 
 /******************** MEETINGS ********************/
@@ -165,8 +261,8 @@ main {
     color: #f0f0f0;
 }
 
-/******************** CONTACTS ********************/
-.contacts {
+/******************** BOARD ********************/
+.board {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-size: 55px;
