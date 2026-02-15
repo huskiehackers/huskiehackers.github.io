@@ -238,3 +238,18 @@ main {
     font-size: 55px;
     color: #f0f0f0;
 }
+
+
+/******************** LIVESTREAM PAGE ********************/
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.iframe-container iframe {
+    width: 80%;
+    max-width: 1240px;
+    height: 756px;
+}
